@@ -13,10 +13,10 @@ export default async function Home() {
     <Container>
       <main className="space-y-10 pb-10">
         <Billboard data={billboard} />
+        <section className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
+          <ProductList title="Featured Products" items={products} />
+        </section>
       </main>
-      <section className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
-        <ProductList title="Featured Products" items={products} />
-      </section>
     </Container>
   );
 }
